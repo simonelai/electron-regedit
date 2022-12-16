@@ -30,7 +30,7 @@ function ProgId({
     this.friendlyAppName = friendlyAppName
     this.extensions = extensions
     this.shell = bindShells(this, shell)
-    this.BASE_KEY = `\\Software\\Classes\\${this.appName}`
+    this.BASE_KEY = `\\Software\\Classes\\${this.progId}`
     Regedit.add(this)
 }
 
